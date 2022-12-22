@@ -1,0 +1,11 @@
+parc dis princes resturante requirments:-
+---------------------------------------
+1- website has two users (Admin - Customer)
+2- Customer can login with facebook, Google, etc. or sign in with a new account in our site
+3- Customer can choose a category of food from on of the three (breakfast - launch - dinner)
+4- Customer can make a compination from the menu after choosing the category
+5- Customer can pay his order online with paypal, visa or cridet card
+6- Admin can add, delete or update items in the menu
+7- Admin can see all the menu items and all users for the special orders
+
+------------------------------------------------------------------------------------------------

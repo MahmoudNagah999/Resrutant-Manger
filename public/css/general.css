@@ -1,0 +1,978 @@
+html {
+    height: 100%;
+}
+
+.GeneralGeneral {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* start General App Container */
+
+.GeneralBody {
+    padding-top: 70px;
+    min-height: 630px;
+}
+
+
+/* end General App Container */
+
+
+/* start Welcome */
+
+.bodyWelcome {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/2.jpg');
+    margin: 0;
+    font-family: 'arial';
+}
+
+.Welcomcontent {
+    font-family: 'Algerian';
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+
+.Welcomtitle {
+    font-size: 84px;
+    padding-top: 60px
+}
+
+
+/* End Welcome */
+
+
+/* ############################################## */
+
+
+/* ############################################## */
+
+
+/* start home */
+
+.HomeBody {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/home1.jpg');
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: #fff;
+    margin: 0;
+}
+
+.HomeBody .hedding {
+    text-align: center;
+}
+
+.HomeBody .hedding h3 {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.HomeBody .hedding h1 span {
+    text-transform: uppercase;
+}
+
+.bottom .Homeitem {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    font-size: bold;
+    display: inline-block;
+    width: 48%;
+    height: 210px;
+    border: solid 1px white;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 25px;
+}
+
+.bottom .Homeitem img,
+.top .Homesecond img {
+    width: 170px;
+    height: 180px;
+    border: 1px solid;
+    border-radius: 250px
+}
+
+.top .Homesecond {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: bold;
+    display: inline-block;
+    width: 48%;
+    height: 210px;
+    border: solid 1px white;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    margin-top: 25px;
+}
+
+
+/* start home page animations */
+
+#cf {
+    position: relative;
+    height: 450px;
+    width: 100%;
+    margin-bottom: 55px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "overlap";
+}
+
+#cf .bottom {
+    position: absolute;
+    -webkit-transition: opacity 5s ease-in-out;
+    -moz-transition: opacity 5s ease-in-out;
+    -o-transition: opacity 5s ease-in-out;
+    transition: opacity 5s ease-in-out;
+    animation-name: cfFadeInOutBottom;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    /* animation-delay: 5s; */
+    animation-duration: 5s;
+    animation-direction: alternate;
+    grid-area: overlap;
+}
+
+#cf .top {
+    animation-name: cfFadeInOutTop;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    grid-area: overlap;
+}
+
+@keyframes cfFadeInOutTop {
+    0% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 1;
+    }
+    55% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes cfFadeInOutBottom {
+    0% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 0;
+    }
+    55% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* end home page animaitons */
+
+
+/* End home */
+
+
+/* ############################################## */
+
+
+/* ############################################## */
+
+
+/* start Menu */
+
+.MenuBody {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('../images/m.jpg');
+    background-size: cover;
+}
+
+.MenuH1 {
+    font-family: algerian;
+    color: #fff;
+    text-align: center;
+}
+
+.MenuBox {
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0.8;
+}
+
+.MenuBox:hover {
+    opacity: 1;
+}
+
+.MenuBox h3 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 30px;
+}
+/* 
+.MenuBox h3:hover {
+    font-size: 20px;
+} */
+
+.MenuBox a {
+    width: 100px;
+}
+
+.MenuBox a:hover {
+    width: 120px;
+    border:1px solid #fff;
+}
+
+.ShowMenu {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    display: inline-block;
+    width: 48%;
+    height: 275px;
+    border: solid;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px
+}
+
+.ShowMenu img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+    border-radius: 100px;
+    margin-top: 15px;
+}
+
+
+/* End Menu */
+
+
+/* ############################################## */
+
+
+/* ############################################## */
+
+
+/* start Items */
+
+.BreakfastBody {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('../images/breakfast.jpg');
+    background-size: cover;
+}
+
+.BreakfastBody h1 {
+    color: #fff;
+    text-align: center;
+    font-family: Algerian;
+}
+
+.OrderCartButton {
+    /* display: inline-block; */
+    margin-top: 7px
+}
+
+div .item {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    display: inline-block;
+    width: 48%;
+    height: 210px;
+    border: solid 1px black;
+    border-radius: 15px;
+    margin: 10px
+}
+
+.item img {
+    width: 150px;
+    height: 150px;
+    border: 1px solid;
+    border-radius: 250px;
+    margin: 25px
+}
+
+.item .boxes label {
+    font-size: 20px;
+    font: bold
+}
+
+.item .boxes a {
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 133px;
+}
+
+.item .boxes a i {
+    margin-right: 5px;
+}
+
+
+/* ------------------------ */
+
+.LunchBody {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('../images/lunch1.jpg');
+    background-size: cover;
+}
+
+.LunchBodyH1 {
+    color: #fff;
+    text-align: center;
+    font-family: Algerian;
+}
+
+
+/* ------------------------ */
+
+.DinnerBody {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/dinner.jpg');
+    background-size: cover;
+}
+
+.DinnerH1 {
+    color: #fff;
+    text-align: center;
+    font-family: Algerian;
+    padding-top: 70px
+}
+
+
+/* ------------------------- */
+
+.CartBody {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/back.jpg');
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: #fff;
+    margin: 0;
+}
+
+.list-group .list-group-item {
+    height: 70px
+}
+
+.list-group strong {
+    color: black
+}
+
+.SubmitOrderItems {
+    color: white;
+    width: 110px;
+    border-radius: 10px;
+    background-color: green;
+}
+
+.DeleteOrderItems {
+    color: white;
+    width: 110px;
+    border-radius: 10px;
+    margin-top: 3px;
+}
+
+.well {
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.NoOrders {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-top: 230px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* End Items */
+
+
+/* ############################################## */
+
+
+/* ############################################## */
+
+
+/* start About Us */
+
+.AboutBody {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url('../images/restaurants.webp');
+    background-size: cover;
+    font-family: 'Raleway', sans-serif;
+}
+
+.AboutBox {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    width: 95%;
+    height: auto;
+    margin-left: 40px;
+    border: rgba(255, 255, 255, 1) 2px solid;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.AboutH1 {
+    font-family: arial;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.AboutBox p {
+    font-size: 16px;
+    text-transform: capitalize;
+    word-wrap: normal;
+    font-weight: bold;
+    color: #FFF
+}
+
+.AboutBox .column {
+    width: 500px;
+    height: 400px;
+    padding: 10px;
+    margin-left: 25px
+}
+
+.AboutBox .column img {
+    opacity: 0.8;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: inline;
+    margin-left: 90px;
+}
+
+.AboutBox .column img:hover {
+    opacity: 1;
+}
+
+.AboutBox .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.AboutBox .ImageContainer {
+    position: relative;
+    display: block
+}
+
+.AboutBox .ImageContainer .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.AboutBox #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: rgb(73, 65, 65);
+    font-size: 20px;
+    font-weight: bold
+}
+
+.AboutBody .container {
+    width: 100%
+}
+
+
+/* End About Us */
+
+
+/* ############################################## */
+
+
+/* ############################################## */
+
+
+/* start Contact Us */
+
+.ContactBody {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Ocean-View-Oceana-Restaurant-4.jpg');
+    background-size: cover;
+}
+
+.ContactH1 {
+    font-size: 60px;
+    font-family: Algerian;
+    text-align: center;
+}
+
+.ContactContent {
+    color: white;
+    font-family: Arial
+}
+
+.ContactBody .my-5 .card {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 600px;
+    height: 600px;
+    padding: 20px;
+    margin-left: 300px;
+    margin-top: 70px;
+    border-radius: 10px;
+    margin-bottom: 70px;
+    border: #FFF 2px solid
+}
+
+.ContactBody .my-5 .title h3 {
+    color: white;
+    margin-bottom: 50px;
+    margin-top: 80px;
+}
+
+.ContactBody .my-5 .md-form {
+    color: white;
+    font-size: 16px;
+    margin-left: 100px;
+    margin-top: 5px
+}
+
+.ContactBody .my-5 .md-form i {
+    margin-left: 5px;
+    margin-top: 3px;
+}
+
+.ContactBody .my-5 .md-form label {
+    margin-right: 360px;
+}
+
+.ContactBody .my-5 .md-form input,
+.ContactBody .my-5 .md-form textarea {
+    width: 80%
+}
+
+.ContactBody .my-5 .md-form .form-Subject {
+    padding-left: -100px;
+    left: -30px
+}
+
+.ContactBody .my-5 .md-form .mess {
+    margin-right: 330px;
+}
+
+.ContactBody .my-5 .Send {
+    color: white;
+    font-size: 16px;
+    margin-top: 15px
+}
+
+
+/* End Contact Us */
+
+
+/* ############################################## */
+
+
+/* ############################################## */
+
+
+/* start Profile */
+
+.profileBody {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/back.jpg');
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: #fff;
+    margin: 0;
+}
+
+.card {
+    width: 600px;
+    height: 700px;
+    margin: 50px auto;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out
+}
+
+.card>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #CCC;
+    font-family: Arial, Tahoma;
+    text-align: center;
+}
+
+.card .Prof header {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 100%;
+    height: 200px;
+    border-radius: 10px
+}
+
+.card .Prof img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 75px;
+    border: #FFF 1px solid;
+    opacity: 0.9;
+}
+
+.card .Prof img:hover {
+    opacity: 1
+}
+
+.card .Prof h3 {
+    margin-top: 90px;
+    text-transform: capitalize
+}
+
+.card .Prof p {
+    margin-top: -10px
+}
+
+.card .Prof h5 {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: bold
+}
+
+.card .Prof h6 {
+    margin-top: -5px
+}
+
+.card .Prof h3:hover,
+.card .Prof p:hover,
+.card .Prof h5:hover,
+.card .Prof h6:hover {
+    color: rgba(255, 255, 255, 0.6)
+}
+
+.card .Prof hr {
+    width: 450px
+}
+
+
+/* Edit Profile*/
+
+.EditProfileBody {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/back.jpg');
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: #FFF;
+    margin: 0;
+}
+
+.EditProfileBody .profEdit {
+    width: 500px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-left: 320px;
+    padding-top: 80px;
+    margin-bottom: 70px;
+    border-radius: 10px;
+    border: #FFF 2px solid;
+    margin-top: 50px;
+}
+
+.EditProfileBody .H1 {
+    text-transform: capitalize;
+    font-size: 46px;
+}
+
+.EditProfileBody .form-group {
+    width: 400px;
+    margin-left: 50px;
+}
+
+.EditProfileBody .btn-primary {
+    margin-left: 220px;
+}
+
+.EditProfileBody .profEdit .image {
+    margin-left: 37px;
+}
+
+
+/*Add Item*/
+
+.addItemBody {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/back.jpg');
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: #FFF;
+    margin: 0;
+}
+
+.addItemBody .panel {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.addItemBody .panel-heading {
+    font-size: 28px;
+    font-family: Algerian;
+}
+
+.addItemBody .panel-body .form-image {
+    margin-left: -140px;
+}
+
+.addItemBody .panel-body .form-image>div {
+    margin-left: 33px;
+}
+
+.addItemBody .panel-body .formItemName {
+    margin-left: -95px;
+}
+
+.addItemBody .panel-body .formItemName>div {
+    margin-left: 5px;
+}
+
+.addItemBody .panel-body .formPrice {
+    margin-left: -105px;
+}
+
+.addItemBody .panel-body .formPrice>div {
+    margin-left: 10px;
+}
+
+.addItemBody .panel-body .formMeal {
+    margin-left: -60px;
+}
+
+.addItemBody .panel-body .formType {
+    margin-left: -100px;
+}
+
+.addItemBody .panel-body .formAvilabilty {
+    margin-left: -100px;
+}
+
+.addItemBody .panel-body hr {
+    width: 600px;
+}
+
+.addItemBody .panel-body .form-group .two {
+    margin-left: 8px;
+}
+
+
+/* Show Menu*/
+
+.veiwallBody {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/back.jpg');
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: #fff;
+    margin: 0;
+}
+
+.veiwallBody h1 {
+    font-family: Algerian;
+    font-size: 48px;
+}
+
+.veiwallBody h1:hover {
+    color: rgba(255, 255, 255, 0.7)
+}
+
+.veiwallBody hr {
+    width: 200px
+}
+
+.veiwallBody .btn-primary {
+    margin-left: 160px;
+    width: 90px
+}
+
+.veiwallBody .btn-danger {
+    width: 90px;
+    margin-left: 10px
+}
+
+
+/* View User*/
+
+.ShowBody {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/back.jpg');
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: #fff;
+    margin: 0;
+}
+
+.ShowBody .headerH1 {
+    font-size: 48px;
+    font-family: Algerian;
+    margin-left: 500px;
+}
+
+.ShowBody .headerH1:hover {
+    opacity: 0.7;
+}
+
+.ShowBody .NumOfUser {
+    width: 80px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #FFF;
+    margin-left: 530px;
+    padding: 10px;
+    border-radius: 5px;
+    border: #FFF 1px solid;
+}
+
+.ShowBody .NumOfUser:hover {
+    opacity: 0.7;
+}
+
+.ShowBody .well {
+    background-color: rgb(0, 0, 0, 0.8);
+    width: 600px;
+    margin-left: 270px;
+    border-radius: 10px;
+    margin-top: 80px;
+}
+
+.ShowBody .well .nam {
+    text-transform: capitalize;
+}
+
+.ShowBody .well hr {
+    width: 300px;
+}
+
+.ShowBody .btn-primary {
+    width: 90px
+}
+
+.ShowBody .btn-danger {
+    width: 90px;
+    margin-left: 10px
+}
+
+
+/* End Profile */
+
+
+/* ############################################## */
+
+
+/* ############################################## */
+
+
+/* start Checkout */
+
+.PayBody {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../images/back.jpg');
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: #fff;
+    margin: 0;
+}
+
+.PaymentClass {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#checkout-form input {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: White
+}
+
+#card-expiry-year {
+    margin-top: 28px;
+}
+
+
+/* End Checkout */
+
+
+/* ############################################## */
+
+
+/* ############################################## */
+
+
+/* start Login */
+
+
+/* End Login */
+
+
+/* ############################################## */
+
+
+/* ############################################## */
+
+
+/* start Logout */
+
+
+/* End Logout */
+
+
+/* ############################################## */
+
+
+/* ############################################## */
+
+
+/* start navbar */
+
+.NavbarCart {
+    margin-top: 3px;
+    font-size: 19px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgba(255, 72, 0, 0.856);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.NavbarCart:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(0, 0, 0, 0.6)
+}
+
+
+/* End navbar */
+
+
+/* ############################################## */
+
+
+/* ############################################## */
+
+
+/* start footer */
+
+.FooterFoot {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    /* padding:15px;
+    position:fixed bottom; */
+    margin-top: auto;
+}
+
+.FooterSection {
+    margin-top: 30px
+}
+
+.FooterCopy {
+    background-color: rgba(0, 0, 0, 1)
+}
+
+
+/* End footer */
+
+
+/* ############################################## */
